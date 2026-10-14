@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="description" content="La Croisée — l’outil phare de Révéla, par DSP Avocats. Le constat amiable à deux : chacun écrit sa version, puis on croise. Ce sur quoi vous êtes d’accord, ce qui vous sépare, et par où commencer." />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#F7F3EA" />
+<title>La Croisée — le constat amiable à deux · un outil Révéla</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Cpolyline points='13.00,13.00%2013.01,12.93%2013.04,12.86%2013.09,12.80%2013.15,12.76%2013.23,12.73%2013.32,12.71%2013.42,12.72%2013.52,12.76%2013.62,12.81%2013.71,12.89%2013.79,12.99%2013.86,13.11%2013.90,13.25%2013.92,13.40%2013.92,13.56%2013.89,13.73%2013.82,13.90%2013.73,14.07%2013.60,14.23%2013.44,14.37%2013.26,14.49%2013.05,14.58%2012.82,14.64%2012.57,14.67%2012.31,14.66%2012.05,14.61%2011.79,14.51%2011.53,14.38%2011.29,14.20%2011.08,13.98%2010.89,13.72%2010.74,13.43%2010.63,13.11%2010.57,12.77%2010.55,12.41%2010.59,12.05%2010.69,11.68%2010.84,11.33%2011.05,10.99%2011.31,10.67%2011.62,10.40%2011.98,10.16%2012.37,9.97%2012.80,9.84%2013.25,9.78%2013.72,9.77%2014.19,9.84%2014.66,9.98%2015.11,10.18%2015.54,10.46%2015.93,10.80%2016.28,11.20%2016.56,11.65%2016.79,12.15%2016.94,12.69%2017.02,13.25%2017.01,13.83%2016.92,14.41%2016.75,14.98%2016.49,15.53%2016.15,16.05%2015.73,16.52%2015.24,16.93%2014.69,17.28%2014.09,17.54%2013.45,17.72%2012.77,17.81%2012.08,17.80%2011.39,17.69%2010.72,17.48%2010.07,17.18%209.46,16.77%208.91,16.28%208.42,15.71%208.02,15.06%207.71,14.36%207.50,13.61%207.40,12.82%207.41,12.02%207.53,11.22%207.77,10.44%208.13,9.69%208.59,8.99%209.15,8.35%209.81,7.79%2010.55,7.33%2011.35,6.97%2012.21,6.72%2013.10,6.60%2014.01,6.61%2014.92,6.75%2015.82,7.02%2016.67,7.41%2017.47,7.93%2018.19,8.57%2018.83,9.30%2019.35,10.13%2019.76,11.03%2020.04,12.00%2020.19,13.00%2020.19,14.02%2020.04,15.05%2019.75,16.05%2019.31,17.01%2018.74,17.90%2018.04,18.71%2017.22,19.43%2016.31,20.02%2015.30,20.49%2014.24,20.81%2013.13,20.98%2011.99,20.99%2010.86,20.83%209.75,20.52%208.68,20.05%207.69,19.42%206.78,18.66%205.99,17.77%205.32,16.76%204.80,15.67%204.43,14.50%204.24,13.28%204.21,12.03%204.37,10.78%204.70,9.56%205.20,8.39%205.88,7.29%206.70,6.29%207.67,5.41%208.76,4.67%209.95,4.09%2011.22,3.68%2012.55,3.45%2013.91,3.41%2015.27,3.56%2016.60,3.91%2017.88,4.45%2019.08,5.16%2020.17,6.05%2021.14,7.09%2021.96,8.26%2022.60,9.54%2023.06,10.92%2023.33,12.35%2023.39,13.82%2023.24,15.29%2022.88,16.73%2022.32,18.12%2021.56,19.43%2020.62,20.62%2019.52,21.68%2018.26,22.57%2016.89,23.29%2015.41,23.80%2013.87,24.11%2012.30,24.19%2010.71,24.05%209.15,23.68%207.65,23.10%206.24,22.30' fill='none' stroke='%23B9924C' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+<style>
+:root { --paper:#F7F3EA; --sheet:#FBF8F1; --navy:#1B2A4A; --ink:#22283A; --gold:#B9924C; --gold-soft:#D8BC85; --line:#E3DACA; --muted:#6E6A5E;
+  --ok:#7FA36C; --mid:#C99A45; --hot:#C2584C;
+  --serif:"Cormorant Garamond", Garamond, "Times New Roman", serif; --sans:"DM Sans","Helvetica Neue",Arial,sans-serif;
+  color-scheme: light; }
+*,*::before,*::after { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); }
+a { color:inherit; }
+button, input, select { font:inherit; color:inherit; }
+button { cursor:pointer; }
+[hidden] { display:none !important; }
+:focus-visible { outline:2px solid var(--gold); outline-offset:3px; }
+.app { max-width:680px; margin:0 auto; padding:0 20px; min-height:100vh; display:flex; flex-direction:column; }
+header.top { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:18px 0; border-bottom:1px solid var(--line); }
+.brand { display:inline-flex; align-items:center; gap:9px; color:var(--navy); text-decoration:none; }
+.brand svg { color:var(--gold); flex:none; }
+.brand span { font-family:var(--serif); font-size:22px; font-weight:600; letter-spacing:.08em; }
+nav.tabs { display:flex; gap:4px; }
+nav.tabs button { border:none; background:none; font-size:13.5px; color:var(--muted); padding:6px 8px; border-radius:8px; }
+nav.tabs button[aria-current="true"] { color:var(--navy); background:rgba(27,42,74,.07); font-weight:600; }
+main { flex:1; padding:28px 0 12px; }
+.screen { display:none; }
+.screen.on { display:block; animation:in .35s ease both; }
+@keyframes in { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
+@media (prefers-reduced-motion: reduce) { .screen.on { animation:none; } }
+.kicker { font-size:12.5px; font-weight:600; color:var(--gold); letter-spacing:.06em; text-transform:uppercase; margin:0 0 10px; }
+h1 { font-family:var(--serif); font-weight:500; color:var(--navy); font-size:clamp(40px,9vw,58px); line-height:1.02; margin:0 0 18px; letter-spacing:-.01em; }
+h1 em { font-style:italic; font-weight:400; color:var(--gold); }
+h2 { font-family:var(--serif); font-weight:600; color:var(--navy); font-size:clamp(27px,6vw,34px); line-height:1.12; margin:0 0 10px; }
+h3 { font-family:var(--serif); font-weight:600; color:var(--navy); font-size:22px; line-height:1.2; margin:0 0 6px; }
+.lede { font-family:var(--serif); font-size:clamp(20px,4.6vw,23px); line-height:1.45; margin:0 0 22px; }
+.muted { color:var(--muted); }
+.small { font-size:14px; }
+p { margin:0 0 14px; }
+.btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; border:1px solid var(--navy); background:transparent; border-radius:999px; padding:13px 24px; font-size:15.5px; font-weight:500; text-decoration:none; color:var(--navy); min-height:48px; }
+.btn.main { background:var(--navy); color:var(--sheet); }
+.btn.main:hover { background:#2A3D63; }
+.btn.main:disabled { background:#A7ADBA; border-color:#A7ADBA; cursor:not-allowed; }
+.btn.ghost:hover { background:rgba(27,42,74,.06); }
+.btn.sm { padding:8px 14px; min-height:36px; font-size:14px; }
+.btn.link { border:none; padding:8px 0; min-height:0; color:var(--muted); text-decoration:underline; text-underline-offset:3px; background:none; }
+.row { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+.panel { background:var(--sheet); border:1px solid var(--line); border-radius:16px; padding:20px; margin:0 0 16px; }
+.duo { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:22px 0 24px; }
+@media (max-width:560px) { .duo { grid-template-columns:1fr; } }
+.duo .panel { margin:0; }
+.duo h3 { font-size:20px; }
+.duo p { font-size:15px; margin:0; }
+.tag { display:inline-block; font-size:12.5px; font-weight:600; border-radius:999px; padding:3px 11px; color:#fff; background:var(--c,var(--navy)); }
+.tag.legal { --c:var(--navy); } .tag.lettre { --c:var(--gold); }
+
+/* Choix */
+.choices { display:grid; gap:10px; margin:0 0 20px; }
+.choice { display:block; width:100%; text-align:left; border:1px solid var(--line); background:var(--sheet); border-radius:14px; padding:16px 18px; min-height:58px; }
+.choice:hover { border-color:var(--gold); }
+.choice strong { display:block; font-weight:600; font-size:16.5px; color:var(--navy); }
+.choice span { display:block; font-size:14px; color:var(--muted); margin-top:2px; }
+.step-q { font-family:var(--serif); font-size:clamp(25px,5.8vw,31px); line-height:1.2; color:var(--navy); margin:0 0 18px; }
+
+/* Formulaire */
+label.f { display:block; margin:0 0 16px; }
+label.f > span { display:block; font-size:14.5px; font-weight:500; color:var(--navy); margin-bottom:5px; }
+label.f small { display:block; font-size:13px; color:var(--muted); margin-top:4px; }
+input[type=text], input[type=date], input[type=number], select { width:100%; border:1px solid var(--line); background:#fff; border-radius:10px; padding:11px 12px; font-size:16px; }
+input:focus, select:focus { outline:2px solid var(--gold-soft); border-color:var(--gold); }
+.dur { display:grid; grid-template-columns:110px 1fr; gap:10px; }
+.check { display:flex; gap:10px; align-items:flex-start; font-size:15px; margin:0 0 14px; cursor:pointer; }
+.check input { width:20px; height:20px; margin-top:2px; accent-color:var(--navy); flex:none; }
+.note { border-left:3px solid var(--gold); padding:4px 0 4px 14px; margin:0 0 18px; font-size:15px; }
+.note.hot { border-color:var(--hot); }
+
+/* Résultat du calcul */
+.result { border-radius:18px; padding:22px; margin:6px 0 18px; background:var(--navy); color:#F7F3EA; }
+.result .kicker { color:var(--gold-soft); margin-bottom:4px; }
+.result .big { font-family:var(--serif); font-size:clamp(30px,7vw,40px); line-height:1.1; font-weight:600; margin:0 0 6px; }
+.result .left { font-size:15px; color:#D3D7E0; margin:0; }
+.result .left strong { color:#fff; }
+.result.past { background:#6A2018; }
+.steps { list-style:none; padding:0; margin:0; counter-reset:s; }
+.steps li { counter-increment:s; position:relative; padding:0 0 12px 34px; font-size:15px; }
+.steps li::before { content:counter(s); position:absolute; left:0; top:0; width:24px; height:24px; border-radius:50%; border:1.5px solid var(--gold); color:var(--gold); font-size:13px; font-weight:600; display:flex; align-items:center; justify-content:center; }
+.steps li a { font-size:13px; color:var(--navy); }
+.safety { background:#FFF7E6; border:1px solid var(--gold-soft); border-radius:14px; padding:14px 16px; font-size:15px; margin:0 0 18px; }
+
+/* Relevé */
+.item { display:grid; grid-template-columns:auto 1fr; gap:4px 16px; align-items:start; background:#fff; border:1px solid var(--line); border-radius:16px; padding:16px 18px; margin:0 0 12px; }
+.item .cd { grid-row:span 3; text-align:center; min-width:74px; border-radius:12px; padding:8px 6px; background:var(--c); color:#fff; }
+.item .cd strong { display:block; font-family:var(--serif); font-size:30px; line-height:1; }
+.item .cd span { font-size:11.5px; }
+.item h3 { font-size:20px; margin:0; }
+.item .when { font-size:14.5px; margin:0; }
+.item .acts { display:flex; gap:12px; flex-wrap:wrap; }
+.empty { text-align:center; color:var(--muted); padding:30px 10px; }
+
+/* Repères */
+table.ref { width:100%; border-collapse:collapse; font-size:15px; margin:0 0 6px; }
+table.ref th { text-align:left; font-size:12.5px; color:var(--muted); font-weight:600; border-bottom:1px solid var(--line); padding:8px 8px 8px 0; }
+table.ref td { border-bottom:1px solid var(--line); padding:10px 8px 10px 0; vertical-align:top; }
+table.ref td.d { font-weight:600; color:var(--navy); white-space:nowrap; }
+table.ref a { font-size:13px; color:var(--navy); }
+@media (max-width:520px) { table.ref, table.ref tbody, table.ref tr, table.ref td { display:block; } table.ref thead { display:none; } table.ref tr { border-bottom:1px solid var(--line); padding:10px 0; } table.ref td { border:none; padding:2px 0; } }
+
+.cta { background:var(--navy); color:#F7F3EA; border-radius:18px; padding:24px 22px; margin:26px 0 16px; }
+.cta h3 { color:#F7F3EA; }
+.cta p { color:#D3D7E0; font-size:15px; }
+.cta .btn { background:var(--gold); border-color:var(--gold); color:var(--navy); font-weight:600; }
+.warn { font-size:13.5px; color:var(--muted); border-top:1px solid var(--line); padding-top:14px; margin-top:20px; }
+.next-links a { font-weight:600; color:var(--navy); }
+footer.foot { border-top:1px solid var(--line); padding:22px 0 34px; font-size:13.5px; color:var(--muted); }
+footer.foot .sig { font-family:var(--serif); font-style:italic; font-size:19px; color:var(--navy); margin:0 0 8px; }
+footer.foot p { margin:0 0 6px; }
+details.mentions { margin-top:10px; }
+details.mentions summary { cursor:pointer; color:var(--navy); font-weight:500; }
+details.mentions h4 { font-family:var(--serif); font-size:18px; color:var(--navy); margin:16px 0 4px; }
+details.mentions p { font-size:13.5px; }
+.print-only { display:none; }
+@media print {
+  @page { margin:16mm 14mm; }
+  body { background:#fff; font-size:11.5pt; }
+  .no-print, header.top, details.mentions, .item .acts { display:none !important; }
+  .print-only { display:block; }
+  .app { max-width:none; padding:0; }
+  .screen { display:none !important; }
+  .screen.on { display:block !important; animation:none; }
+  .item, .panel { break-inside:avoid; }
+  .item .cd, .result { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+}
+.skip{position:absolute;left:-9999px;top:8px;z-index:30;background:var(--navy);color:#fff;padding:8px 16px;border-radius:999px;font-size:14px;text-decoration:none}.skip:focus{left:12px}
+
+/* Spécifique à La Croisée */
+.cross { display:block; margin:6px auto 18px; }
+.rounds { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; margin:20px 0 24px; }
+@media (max-width:560px) { .rounds { grid-template-columns:1fr; } }
+.rounds div { background:var(--sheet); border:1px solid var(--line); border-radius:14px; padding:14px; }
+.rounds b { display:block; font-family:var(--serif); font-size:26px; color:var(--gold); line-height:1; margin-bottom:4px; }
+.rounds strong { display:block; color:var(--navy); font-size:15px; }
+.rounds span { font-size:13.5px; color:var(--muted); }
+.who { display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; border-radius:999px; padding:4px 12px; margin:0 0 10px; color:#fff; background:var(--c); }
+.cA { --c:#1B2A4A; } .cB { --c:#B9924C; }
+.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+@media (max-width:520px) { .grid2 { grid-template-columns:1fr; } }
+textarea { width:100%; border:1px solid var(--line); background:#fff; border-radius:10px; padding:11px 12px; font-size:16px; min-height:80px; resize:vertical; font-family:inherit; line-height:1.55; }
+textarea:focus { outline:2px solid var(--gold-soft); border-color:var(--gold); }
+.chips { display:flex; flex-wrap:wrap; gap:6px; }
+.chip { border:1px solid var(--line); background:var(--sheet); border-radius:999px; padding:8px 14px; font-size:14.5px; min-height:40px; text-align:left; }
+.chip[aria-pressed="true"] { background:var(--navy); border-color:var(--navy); color:var(--sheet); }
+.flist { list-style:none; padding:0; margin:0 0 10px; counter-reset:f; }
+.flist li { counter-increment:f; display:flex; gap:10px; align-items:flex-start; background:#fff; border:1px solid var(--line); border-radius:12px; padding:10px 12px; margin:0 0 8px; }
+.flist li::before { content:counter(f); flex:none; width:24px; height:24px; border-radius:50%; background:var(--c,var(--navy)); color:#fff; font-size:12.5px; font-weight:600; display:flex; align-items:center; justify-content:center; margin-top:2px; }
+.flist .t { flex:1; font-size:15px; }
+.flist button { border:none; background:none; color:var(--muted); font-size:13px; text-decoration:underline; padding:2px; }
+.addrow { display:flex; gap:8px; }
+.addrow textarea { min-height:56px; }
+.hint { background:#FFF7E6; border:1px solid var(--gold-soft); border-radius:10px; padding:8px 12px; font-size:13.5px; margin:6px 0 0; }
+.pos { background:#fff; border:1px solid var(--line); border-radius:14px; padding:14px 16px; margin:0 0 10px; }
+.pos .ft { font-size:15.5px; margin:0 0 8px; }
+.pos .ft b { color:var(--gold); margin-right:6px; }
+.seg { display:flex; flex-wrap:wrap; gap:6px; }
+.seg button { border:1px solid var(--line); background:var(--sheet); border-radius:999px; padding:7px 12px; font-size:13.5px; min-height:36px; }
+.seg button[aria-pressed="true"][data-s="ok"] { background:#7FA36C; border-color:#7FA36C; color:#fff; }
+.seg button[aria-pressed="true"][data-s="part"] { background:#C99A45; border-color:#C99A45; color:#fff; }
+.seg button[aria-pressed="true"][data-s="non"] { background:#C2584C; border-color:#C2584C; color:#fff; }
+.seg button[aria-pressed="true"][data-s="nsp"] { background:#6E6A5E; border-color:#6E6A5E; color:#fff; }
+.pos textarea { min-height:52px; margin-top:8px; font-size:15px; }
+.code { width:100%; min-height:130px; font-family:ui-monospace,Menlo,Consolas,monospace; font-size:12.5px; word-break:break-all; background:#fff; }
+.stepnote { background:var(--navy); color:#F7F3EA; border-radius:16px; padding:18px 20px; margin:0 0 16px; }
+.stepnote p { margin:0; color:#D3D7E0; font-size:15px; }
+.stepnote strong { color:#fff; }
+.meter { display:flex; align-items:center; gap:18px; background:var(--navy); color:#F7F3EA; border-radius:18px; padding:20px 22px; margin:0 0 16px; }
+.meter svg { flex:none; }
+.meter strong { font-family:var(--serif); font-size:24px; display:block; line-height:1.15; }
+.meter p { margin:4px 0 0; font-size:14.5px; color:#D3D7E0; }
+.syn h3 { font-size:20px; display:flex; align-items:center; gap:8px; }
+.syn h3 i { width:12px; height:12px; border-radius:3px; background:var(--c); display:inline-block; }
+.syn ul { margin:0; padding-left:20px; font-size:15px; }
+.syn li { margin-bottom:8px; }
+.syn li small { display:block; color:var(--muted); font-size:13.5px; }
+.cols { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+@media (max-width:560px) { .cols { grid-template-columns:1fr; } }
+.cols .panel { margin:0; }
+.tagc { display:inline-block; font-size:12px; font-weight:600; border-radius:999px; padding:2px 9px; background:#E5EEDF; color:#3F6431; margin:2px 4px 2px 0; }
+.law { border-top:1px solid var(--line); padding:12px 0; }
+.law:first-child { border-top:none; padding-top:0; }
+.law p { margin:0 0 4px; font-size:15px; }
+.law a { font-size:13.5px; color:var(--navy); }
+.toast { position:fixed; left:50%; bottom:24px; transform:translateX(-50%); background:var(--navy); color:#fff; padding:10px 18px; border-radius:999px; font-size:14px; z-index:9; }
+.sigs { display:none; }
+@media print { .meter, .stepnote { -webkit-print-color-adjust:exact; print-color-adjust:exact; } .sigs { display:grid; grid-template-columns:1fr 1fr; gap:30px; margin-top:24px; font-size:11pt; } .sigs div { border-top:1px solid #999; padding-top:6px; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="app">
+<header class="top">
+  <a class="brand" href="https://dsp-avocats.fr/" aria-label="Révéla, par DSP Avocats"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><polyline points="13.00,13.00 13.01,12.93 13.04,12.86 13.09,12.80 13.15,12.76 13.23,12.73 13.32,12.71 13.42,12.72 13.52,12.76 13.62,12.81 13.71,12.89 13.79,12.99 13.86,13.11 13.90,13.25 13.92,13.40 13.92,13.56 13.89,13.73 13.82,13.90 13.73,14.07 13.60,14.23 13.44,14.37 13.26,14.49 13.05,14.58 12.82,14.64 12.57,14.67 12.31,14.66 12.05,14.61 11.79,14.51 11.53,14.38 11.29,14.20 11.08,13.98 10.89,13.72 10.74,13.43 10.63,13.11 10.57,12.77 10.55,12.41 10.59,12.05 10.69,11.68 10.84,11.33 11.05,10.99 11.31,10.67 11.62,10.40 11.98,10.16 12.37,9.97 12.80,9.84 13.25,9.78 13.72,9.77 14.19,9.84 14.66,9.98 15.11,10.18 15.54,10.46 15.93,10.80 16.28,11.20 16.56,11.65 16.79,12.15 16.94,12.69 17.02,13.25 17.01,13.83 16.92,14.41 16.75,14.98 16.49,15.53 16.15,16.05 15.73,16.52 15.24,16.93 14.69,17.28 14.09,17.54 13.45,17.72 12.77,17.81 12.08,17.80 11.39,17.69 10.72,17.48 10.07,17.18 9.46,16.77 8.91,16.28 8.42,15.71 8.02,15.06 7.71,14.36 7.50,13.61 7.40,12.82 7.41,12.02 7.53,11.22 7.77,10.44 8.13,9.69 8.59,8.99 9.15,8.35 9.81,7.79 10.55,7.33 11.35,6.97 12.21,6.72 13.10,6.60 14.01,6.61 14.92,6.75 15.82,7.02 16.67,7.41 17.47,7.93 18.19,8.57 18.83,9.30 19.35,10.13 19.76,11.03 20.04,12.00 20.19,13.00 20.19,14.02 20.04,15.05 19.75,16.05 19.31,17.01 18.74,17.90 18.04,18.71 17.22,19.43 16.31,20.02 15.30,20.49 14.24,20.81 13.13,20.98 11.99,20.99 10.86,20.83 9.75,20.52 8.68,20.05 7.69,19.42 6.78,18.66 5.99,17.77 5.32,16.76 4.80,15.67 4.43,14.50 4.24,13.28 4.21,12.03 4.37,10.78 4.70,9.56 5.20,8.39 5.88,7.29 6.70,6.29 7.67,5.41 8.76,4.67 9.95,4.09 11.22,3.68 12.55,3.45 13.91,3.41 15.27,3.56 16.60,3.91 17.88,4.45 19.08,5.16 20.17,6.05 21.14,7.09 21.96,8.26 22.60,9.54 23.06,10.92 23.33,12.35 23.39,13.82 23.24,15.29 22.88,16.73 22.32,18.12 21.56,19.43 20.62,20.62 19.52,21.68 18.26,22.57 16.89,23.29 15.41,23.80 13.87,24.11 12.30,24.19 10.71,24.05 9.15,23.68 7.65,23.10 6.24,22.30" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>Révéla</span></a>
+  <span class="small muted">La Croisée</span>
+</header>
+
+<main id="main">
+<!-- Accueil -->
+<section class="screen on" id="s-intro" aria-labelledby="t-intro">
+  <p class="kicker">L’outil phare de Révéla · Résoudre</p>
+  <h1 id="t-intro">La Croisée<br><em>le constat amiable à deux</em></h1>
+  <svg class="cross" width="120" height="70" viewBox="0 0 120 70" aria-hidden="true"><path d="M8 62 C 40 62, 50 8, 112 8" fill="none" stroke="#1B2A4A" stroke-width="2.5" stroke-linecap="round"/><path d="M8 8 C 70 8, 80 62, 112 62" fill="none" stroke="#B9924C" stroke-width="2.5" stroke-linecap="round"/><circle cx="60" cy="35" r="5" fill="#F7F3EA" stroke="#1B2A4A" stroke-width="2"/></svg>
+  <p class="lede">Dans un conflit, chacun est sûr de sa version. Pourtant, quand on les pose côte à côte, on découvre souvent qu’on est d’accord sur l’essentiel des faits. Ce qui reste à discuter devient alors visible, et donc traitable.</p>
+  <div class="rounds">
+    <div><b>1</b><strong>Vous écrivez votre constat</strong><span>Les faits, vos besoins, vos propositions. Vous envoyez un code à l’autre partie.</span></div>
+    <div><b>2</b><strong>L’autre se positionne</strong><span>D’accord, en partie, pas d’accord, sur chacun de vos faits. Puis il ajoute les siens.</span></div>
+    <div><b>3</b><strong>Vous croisez</strong><span>Vous vous positionnez sur ses faits. La Croisée dresse la carte commune.</span></div>
+  </div>
+  <div class="row"><button class="btn main" id="btn-new">Commencer un constat</button><button class="btn ghost" id="btn-open">J’ai reçu un code</button><button class="btn link" id="btn-demo">Voir la croisée d’Élise et de l’artisan</button></div>
+  <div class="row" style="margin-top:8px"><button class="btn link" id="btn-resume" hidden>Reprendre mon constat en cours</button></div>
+  <p class="small muted" style="margin-top:22px">Aucun serveur : le constat circule entre vous par un code à copier ou un fichier, que vous vous envoyez comme vous le souhaitez. Attention : hors médiation ou conciliation, ce que vous écrivez ici n’est pas confidentiel. N’écrivez que ce que vous êtes prêt à assumer.</p>
+</section>
+
+<!-- Ouvrir un code -->
+<section class="screen" id="s-open" aria-labelledby="t-open">
+  <p class="kicker">J’ai reçu un code</p>
+  <h2 id="t-open">Ouvrir le constat reçu</h2>
+  <div class="panel">
+    <label class="f"><span>Collez le code reçu</span><textarea class="code" id="in-code" placeholder="CROISEE1:…"></textarea></label>
+    <div class="row"><button class="btn main" id="btn-read">Ouvrir</button><button class="btn ghost" id="btn-file">Ouvrir un fichier</button><input type="file" id="file" aria-label="Fichier de code La Croisée" accept=".json,.txt,application/json,text/plain" hidden /></div>
+  </div>
+  <div class="row"><button class="btn link" data-go="intro">Retour</button></div>
+</section>
+
+<!-- Rédaction de mon constat (A au tour 1, B au tour 2) -->
+<section class="screen" id="s-write" aria-labelledby="t-write">
+  <span class="who" id="w-who"></span>
+  <h2 id="t-write">Mon constat</h2>
+  <p class="muted" id="w-intro"></p>
+  <div class="panel" id="w-meta">
+    <label class="f"><span>L’objet du différend</span><input type="text" id="in-objet" placeholder="Par exemple : le chantier de la cuisine" /></label>
+    <div class="grid2">
+      <label class="f" style="margin:0"><span>Mon nom</span><input type="text" id="in-me" /></label>
+      <label class="f" style="margin:0" id="other-wrap"><span>L’autre partie</span><input type="text" id="in-other" /></label>
+    </div>
+  </div>
+  <div class="panel" id="w-meB" hidden><label class="f" style="margin:0"><span>Mon nom</span><input type="text" id="in-meB" /></label></div>
+  <div class="panel">
+    <h3 style="font-size:20px">Les faits, tels que je les ai vécus</h3>
+    <p class="small muted" style="margin:0 0 10px">Un fait par ligne, daté si possible. Écrivez ce que l’autre pourrait reconnaître, sans le qualifier : il va se positionner sur chacun.</p>
+    <ol class="flist" id="w-facts"></ol>
+    <div class="addrow"><textarea id="in-fact" aria-label="Un fait, daté et vérifiable" placeholder="Par exemple : le 15 juin, j’ai versé un acompte de 4 200 €."></textarea></div>
+    <div class="hint" id="fact-hint" hidden></div>
+    <div class="row" style="margin-top:8px"><button class="btn sm main" id="btn-addfact">Ajouter ce fait</button></div>
+  </div>
+  <div class="panel">
+    <h3 style="font-size:20px">Ce dont j’ai besoin</h3>
+    <div class="chips" id="w-needs"></div>
+    <label class="f" style="margin:10px 0 0"><span>Un autre besoin</span><input type="text" id="in-needx" placeholder="Facultatif" /></label>
+  </div>
+  <div class="panel">
+    <label class="f"><span>Ce que je souhaite</span><textarea id="in-souhait" placeholder="L’issue idéale pour moi, en une ou deux phrases."></textarea></label>
+    <label class="f" style="margin:0"><span>Ce que je propose</span><textarea id="in-prop" placeholder="Une ou plusieurs propositions concrètes, une par ligne."></textarea></label>
+  </div>
+  <div class="row"><button class="btn main" id="btn-w-next"></button><button class="btn link" id="btn-w-back">Retour</button></div>
+</section>
+
+<!-- Positionnement sur les faits de l'autre -->
+<section class="screen" id="s-pos" aria-labelledby="t-pos">
+  <span class="who" id="p-who"></span>
+  <h2 id="t-pos"></h2>
+  <p class="muted" id="p-intro"></p>
+  <div id="p-list"></div>
+  <div class="panel" id="p-other" hidden></div>
+  <div class="row"><button class="btn main" id="btn-p-next"></button><button class="btn link" id="btn-p-back">Retour</button></div>
+</section>
+
+<!-- Partage du code -->
+<section class="screen" id="s-share" aria-labelledby="t-share">
+  <div class="stepnote" id="sh-note"></div>
+  <h2 id="t-share">Le code à transmettre</h2>
+  <p class="muted" id="sh-intro"></p>
+  <textarea class="code" id="out-code" readonly aria-label="Code à transmettre"></textarea>
+  <div class="row" style="margin-top:10px"><button class="btn main" id="btn-copy">Copier le code</button><button class="btn ghost" id="btn-dl">Télécharger le fichier</button><button class="btn link" id="btn-mail">Préparer un courriel</button></div>
+  <p class="small muted" style="margin-top:16px">Le code contient tout le constat, en clair : il n’est ni chiffré ni stocké ailleurs que chez vous et chez la personne à qui vous l’envoyez.</p>
+  <div class="panel" id="sh-next" style="margin-top:18px"><p style="margin:0 0 10px;font-size:15px" id="sh-next-t"></p><button class="btn main" id="btn-sh-open">J’ai reçu la réponse : ouvrir le code</button></div>
+  <div class="row" style="margin-top:8px"><button class="btn link" id="btn-sh-syn" hidden>Voir la croisée</button><button class="btn link" data-go="intro">Accueil</button></div>
+</section>
+
+<!-- Synthèse -->
+<section class="screen" id="s-syn" aria-labelledby="t-syn">
+  <div class="print-only"><p class="kicker">Révéla · La Croisée</p></div>
+  <p class="kicker no-print">La croisée</p>
+  <h2 id="t-syn"></h2>
+  <p class="small muted" id="syn-date"></p>
+  <div class="meter" id="meter"></div>
+  <div class="panel syn" id="syn-ok"></div>
+  <div class="panel syn" id="syn-diff"></div>
+  <div class="panel syn" id="syn-nsp"></div>
+  <div class="cols" style="margin-bottom:16px"><div class="panel syn" id="syn-needA"></div><div class="panel syn" id="syn-needB"></div></div>
+  <div class="panel syn" id="syn-common"></div>
+  <div class="cols" style="margin-bottom:16px"><div class="panel syn" id="syn-propA"></div><div class="panel syn" id="syn-propB"></div></div>
+  <div class="panel syn" id="syn-next"></div>
+  <div class="panel no-print"><h3 style="font-size:20px">Ce que disent les textes</h3><div id="syn-law"></div></div>
+  <div class="sigs"><div id="sigA"></div><div id="sigB"></div></div>
+  <p class="small muted">Ce document est un constat de positions. Ce n’est ni un accord, ni une transaction, et il n’engage personne à rien d’autre qu’à poursuivre le dialogue.</p>
+  <div class="cta no-print">
+    <h3>Transformer la croisée en accord</h3>
+    <p>Un constat partagé est la meilleure base d’une conciliation, d’une médiation ou d’une procédure participative. Le cabinet peut vous accompagner dans cette étape, et dans la rédaction d’un accord. Le bilan amiable gratuit commence par là.</p>
+    <a class="btn" href="mailto:contact@dsp-avocats.fr?subject=Bilan%20amiable%20gratuit%20%E2%80%94%20La%20Crois%C3%A9e">Demander mon bilan amiable gratuit</a>
+  </div>
+  <div class="row no-print"><button class="btn main" id="btn-print">Imprimer la croisée</button><button class="btn ghost" id="btn-syn-share">Retrouver le code final</button><button class="btn link" data-go="intro">Accueil</button></div>
+  <p class="warn">La Croisée compare des positions déclarées. Elle ne vérifie pas les faits, ne dit pas qui a raison et ne remplace pas l’analyse d’un avocat.</p>
+</section>
+</main>
+
+<footer class="foot no-print">
+  <p class="sig">Le droit existe lorsqu’on le révèle.</p>
+  <p>Révéla, par SELARL DSP Avocats, société d’avocats inscrite au Barreau de Nice. 8 bis rue Andrioli, Le Capitole V, 06000 Nice. <a href="mailto:contact@dsp-avocats.fr">contact@dsp-avocats.fr</a></p>
+  <p><button class="btn link" id="btn-erase" style="font-size:13.5px">Effacer mes données de cet appareil</button></p>
+  <details class="mentions" id="mentions-legales">
+    <summary>Mentions légales et confidentialité</summary>
+    <h4>Éditeur</h4>
+    <p>La Croisée est éditée par la SELARL DSP Avocats, société d’avocats inscrite au Barreau de Nice, au capital de 402 euros, SIREN 978 376 234. Siège : 8 bis rue Andrioli, Le Capitole V, 06000 Nice. Téléphone : 04 93 97 66 66. Courriel : contact@dsp-avocats.fr.</p>
+    <h4>Directeur de la publication</h4>
+    <p>SELARL DSP Avocats, représentée par ses cogérants, Lucas Panicucci et Claire Delmasse Simoni.</p>
+    <h4>Hébergement</h4>
+    <p>Vercel Inc., 440 North Barranca Avenue, Suite 4133, Covina, Californie 91723, États-Unis. vercel.com.</p>
+    <h4>Confidentialité</h4>
+    <p>La Croisée fonctionne entièrement dans votre navigateur. Votre constat est enregistré uniquement dans le stockage local de votre appareil. Il ne circule que par le code ou le fichier que vous choisissez vous-même d’envoyer. Rien n’est transmis au cabinet. Le site n’utilise ni cookie publicitaire ni outil de mesure d’audience. Le bouton « Effacer mes données » supprime tout.</p>
+    <p>Si vous écrivez au cabinet, les informations que vous transmettez sont traitées par la SELARL DSP Avocats pour répondre à votre demande. Elles sont couvertes par le secret professionnel de l’avocat. Vous pouvez demander à tout moment l’accès à vos données, leur rectification ou leur suppression, à contact@dsp-avocats.fr.</p>
+    <h4>Nature de l’outil</h4>
+    <p>La Croisée est un outil de dialogue. Le constat qu’elle produit n’est ni un accord ni une transaction. Hors médiation et conciliation, son contenu n’est pas couvert par la confidentialité. L’outil ne constitue pas une consultation juridique et ne remplace pas l’analyse personnalisée d’un avocat. L’exemple d’Élise et de l’artisan est fictif.</p>
+    <h4>Propriété intellectuelle</h4>
+    <p>Les textes, visuels et outils du site sont la propriété de la SELARL DSP Avocats. Toute reproduction sans autorisation est interdite.</p>
+  </details>
+</footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var LIENS = { pourparler: "", balance: "", ouverture: "" };   /* à renseigner au fil des mises en ligne */
+  var KEY = "revela-croisee-v1", PFX = "CROISEE1:";
+  function L(id) { return "https://www.legifrance.gouv.fr/codes/article_lc/" + id; }
+  var LAW = [
+    ["Article 1528-3 du Code de procédure civile", L("LEGIARTI000051930598"), "La confidentialité couvre l’audience de règlement amiable, la conciliation confiée à un conciliateur de justice et la médiation. Un constat échangé directement entre les parties n’en bénéficie pas : poursuivez-le dans l’un de ces cadres si vous voulez parler librement."],
+    ["Article 2062 du Code civil", L("LEGIARTI000033458758"), "Par une convention de procédure participative, conclue pour une durée déterminée et avec l’assistance d’avocats, les parties s’engagent à œuvrer conjointement et de bonne foi à la résolution amiable de leur différend ou à la mise en état de leur litige."],
+    ["Article 129 du Code de procédure civile", L("LEGIARTI000051928714"), "Une fois le juge saisi, les parties peuvent encore instruire elles-mêmes leur affaire par voie conventionnelle : c’est l’instruction conventionnelle, simplifiée ou sous forme de procédure participative."],
+    ["Article 1543 du Code de procédure civile", L("LEGIARTI000051930495"), "Une transaction, ou un accord issu d’une conciliation, d’une médiation ou d’une procédure participative, peut être homologué par le juge pour acquérir force exécutoire."]
+  ];
+  var NEEDS = ["Clarté sur la suite", "Respect des engagements", "Sécurité financière", "Rapidité", "Éviter un procès", "Préserver la relation", "Être reconnu dans ses efforts", "Tranquillité", "Limiter les frais"];
+  var JUDGE = ["toujours", "jamais", "évidemment", "manifestement", "mauvaise foi", "malhonnête", "menteur", "menteuse", "incompétent", "incompétente", "scandaleux", "inadmissible", "n’importe quoi", "n'importe quoi", "arnaque", "escroc", "exprès", "volontairement"];
+  var ST = [["ok", "D’accord"], ["part", "En partie"], ["non", "Pas d’accord"], ["nsp", "Je ne sais pas"]];
+
+  /* ---------- Exemple : Élise et l'artisan ---------- */
+  function demo() {
+    var A = { nom: "Élise Ferrand", faits: [
+      { id: "a1", t: "Le 12 juin 2026, nous avons signé un devis de 9 600 € TTC pour une cuisine équipée, pose prévue courant août." },
+      { id: "a2", t: "Le 15 juin 2026, j’ai versé un acompte de 4 200 €." },
+      { id: "a3", t: "Le 24 août, l’équipe a déposé l’ancienne cuisine et installé les premiers caissons." },
+      { id: "a4", t: "Le 11 septembre, l’équipe est repartie avec deux caissons et le plan de travail." },
+      { id: "a5", t: "Le 18 septembre, vous m’avez écrit par SMS que l’équipe reviendrait la semaine suivante." },
+      { id: "a6", t: "Le 2 octobre, je vous ai relancé par courriel, sans réponse." },
+      { id: "a7", t: "Le 4 novembre, j’ai reçu votre lettre recommandée demandant 3 000 € avant toute reprise." } ],
+      besoins: ["Clarté sur la suite", "Respect des engagements", "Rapidité", "Éviter un procès"], besoinx: "Retrouver une cuisine utilisable avant Noël",
+      souhait: "Que la cuisine soit terminée avant le 20 décembre, au prix du devis.",
+      prop: "Fixer ensemble, par écrit, un calendrier de fin des travaux.\nPayer le solde selon les étapes prévues au devis, au fur et à mesure de l’avancement." };
+    var B = { nom: "Marc Martin, artisan cuisiniste", faits: [
+      { id: "b1", t: "Le devis prévoit un deuxième versement de 30 % à la livraison des meubles." },
+      { id: "b2", t: "Les deux caissons repris le 11 septembre étaient non conformes et devaient être échangés chez le fournisseur." },
+      { id: "b3", t: "Le fournisseur a livré les caissons de remplacement le 6 novembre." },
+      { id: "b4", t: "J’ai envoyé deux SMS en octobre pour demander le deuxième versement." } ],
+      besoins: ["Sécurité financière", "Être reconnu dans ses efforts", "Éviter un procès", "Clarté sur la suite"], besoinx: "",
+      souhait: "Reprendre le chantier rapidement avec la garantie d’être payé.",
+      prop: "Reprendre le chantier la semaine du 30 novembre.\nVersement de 1 500 € à la livraison des meubles, puis le solde à la réception des travaux." };
+    return { v: 1, objet: "Le chantier de la cuisine", stage: 3, A: A, B: B, demo: true,
+      posB: { a1: { s: "ok" }, a2: { s: "ok" }, a3: { s: "ok" }, a4: { s: "part", c: "Les caissons ont été repris pour échange chez le fournisseur, car ils étaient non conformes." }, a5: { s: "ok" }, a6: { s: "part", c: "Je n’ai pas vu ce courriel, arrivé dans mes indésirables." }, a7: { s: "ok" } },
+      posA: { b1: { s: "ok" }, b2: { s: "nsp", c: "Personne ne me l’a dit." }, b3: { s: "nsp" }, b4: { s: "non", c: "Je n’ai reçu aucun SMS en octobre." } } };
+  }
+
+  /* ---------- État ---------- */
+  var st = { d: null, role: "", screen: "intro", lastCode: "" };
+  function load() { try { var r = localStorage.getItem(KEY); if (r) { var x = JSON.parse(r); if (x && typeof x === "object") st = Object.assign(st, x); } } catch (e) {} }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {} }
+  var $ = function (id) { return document.getElementById(id); };
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  var SCREENS = ["intro", "open", "write", "pos", "share", "syn"];
+  function show(n, keep) { SCREENS.forEach(function (x) { $("s-" + x).classList.toggle("on", x === n); }); if (!keep) { st.screen = n; save(); } window.scrollTo(0, 0); }
+  function toast(t) { var d = document.createElement("div"); d.className = "toast"; d.setAttribute("role", "status"); d.setAttribute("aria-live", "polite"); d.textContent = t; document.body.appendChild(d); setTimeout(function () { d.remove(); }, 2400); }
+  function uid(p) { return p + Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
+  function find(list, text) { var t = (text || "").toLowerCase(), out = []; list.forEach(function (w) { var re = new RegExp("(^|[^a-zà-ÿ])" + w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "($|[^a-zà-ÿ])", "i"); if (re.test(t) && out.indexOf(w) < 0) out.push(w); }); return out; }
+  function blankParty() { return { nom: "", faits: [], besoins: [], besoinx: "", souhait: "", prop: "" }; }
+  function me() { return st.role === "A" ? st.d.A : st.d.B; }
+  function nameA() { return (st.d && st.d.A.nom) || "Partie A"; }
+  function nameB() { return (st.d && st.d.B && st.d.B.nom) || st.d.otherName || "Partie B"; }
+
+  /* ---------- Code : encodage ---------- */
+  function encode(obj) { var json = JSON.stringify(obj), bytes = new TextEncoder().encode(json), bin = ""; for (var i = 0; i < bytes.length; i++) bin += String.fromCharCode(bytes[i]); return PFX + btoa(bin).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, ""); }
+  function decode(code) {
+    var c = String(code || "").trim().replace(/\s+/g, "");
+    if (c.indexOf(PFX) !== 0) throw new Error("prefix");
+    var b = c.slice(PFX.length).replace(/-/g, "+").replace(/_/g, "/"); while (b.length % 4) b += "=";
+    var bin = atob(b), bytes = new Uint8Array(bin.length); for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    var d = JSON.parse(new TextDecoder().decode(bytes));
+    if (!d || d.v !== 1 || !d.A || !Array.isArray(d.A.faits) || [1, 2, 3].indexOf(d.stage) < 0) throw new Error("format");
+    return sanitize(d);
+  }
+  function sanitize(d) {
+    function party(p) { if (!p) return null; return { nom: String(p.nom || "").slice(0, 120), faits: (p.faits || []).slice(0, 30).map(function (f, i) { return { id: String(f.id || "f" + i).slice(0, 40), t: String(f.t || "").slice(0, 600) }; }), besoins: (p.besoins || []).filter(function (x) { return NEEDS.indexOf(x) >= 0; }), besoinx: String(p.besoinx || "").slice(0, 200), souhait: String(p.souhait || "").slice(0, 800), prop: String(p.prop || "").slice(0, 1500) }; }
+    function pos(o) { var r = {}; Object.keys(o || {}).slice(0, 40).forEach(function (k) { var v = o[k] || {}; if (["ok", "part", "non", "nsp"].indexOf(v.s) >= 0) r[String(k).slice(0, 40)] = { s: v.s, c: String(v.c || "").slice(0, 600) }; }); return r; }
+    return { v: 1, objet: String(d.objet || "").slice(0, 160), otherName: String(d.otherName || "").slice(0, 120), stage: d.stage, A: party(d.A), B: party(d.B) || blankParty(), posB: pos(d.posB), posA: pos(d.posA), demo: !!d.demo };
+  }
+
+  /* ---------- Accueil ---------- */
+  function initIntro() { $("btn-resume").hidden = !(st.d && !st.d.demo); }
+  $("btn-new").onclick = function () { st.d = { v: 1, objet: "", otherName: "", stage: 1, A: blankParty(), B: blankParty(), posB: {}, posA: {} }; st.role = "A"; save(); renderWrite(); show("write"); };
+  $("btn-open").onclick = function () { $("in-code").value = ""; show("open"); };
+  $("btn-demo").onclick = function () { st.d = demo(); st.role = "A"; save(); renderSyn(); show("syn"); };
+  $("btn-resume").onclick = function () { route(); };
+  document.querySelectorAll("[data-go]").forEach(function (b) { b.onclick = function () { initIntro(); show(b.getAttribute("data-go")); }; });
+
+  function route() {
+    var d = st.d; if (!d) { show("intro"); return; }
+    if (d.stage === 3) { renderSyn(); show("syn"); return; }
+    if (st.role === "A" && d.stage === 1) { if (st.lastCode) { renderShare(); show("share"); } else { renderWrite(); show("write"); } return; }
+    if (st.role === "B" && d.stage === 1) { renderPos(); show("pos"); return; }
+    if (st.role === "B" && d.stage === 2) { renderShare(); show("share"); return; }
+    if (st.role === "A" && d.stage === 2) { renderPos(); show("pos"); return; }
+  }
+
+  /* ---------- Ouverture d'un code ---------- */
+  function openCode(code) {
+    var d;
+    try { d = decode(code); } catch (e) { toast("Ce code n’est pas un constat La Croisée, ou il est incomplet."); return; }
+    st.d = d; st.lastCode = "";
+    if (d.stage === 1) { st.role = "B"; save(); renderPos(); show("pos"); toast("Constat de " + (d.A.nom || "l’autre partie") + " ouvert."); }
+    else if (d.stage === 2) { st.role = "A"; save(); renderPos(); show("pos"); toast("Réponse de " + (d.B.nom || "l’autre partie") + " ouverte."); }
+    else { save(); renderSyn(); show("syn"); toast("Croisée finale ouverte."); }
+  }
+  $("btn-read").onclick = function () { openCode($("in-code").value); };
+  $("btn-file").onclick = function () { $("file").click(); };
+  $("file").addEventListener("change", function () { var f = this.files && this.files[0]; if (!f) return; var rd = new FileReader(); rd.onload = function () { openCode(String(rd.result || "")); }; rd.readAsText(f); this.value = ""; });
+
+  /* ---------- Rédaction ---------- */
+  function renderWrite() {
+    var d = st.d, isA = st.role === "A", p = me();
+    $("w-who").className = "who " + (isA ? "cA" : "cB"); $("w-who").textContent = isA ? "Tour 1 · Votre constat" : "Tour 2 · Votre constat";
+    $("t-write").textContent = isA ? "Mon constat" : "À mon tour : mes faits, mes besoins";
+    $("w-intro").textContent = isA ? "Écrivez votre version, simplement. L’autre partie se positionnera sur chacun de vos faits, puis ajoutera les siens." : "Ajoutez les faits que " + nameA() + " n’a pas mentionnés, puis vos besoins et vos propositions.";
+    $("w-meta").hidden = !isA; $("w-meB").hidden = isA;
+    $("in-objet").value = d.objet || ""; $("in-me").value = d.A.nom || ""; $("in-other").value = d.otherName || ""; $("in-meB").value = d.B.nom || "";
+    $("in-souhait").value = p.souhait || ""; $("in-prop").value = p.prop || ""; $("in-needx").value = p.besoinx || "";
+    $("w-needs").innerHTML = NEEDS.map(function (n) { return '<button class="chip" data-n="' + esc(n) + '" aria-pressed="' + (p.besoins.indexOf(n) >= 0) + '">' + esc(n) + "</button>"; }).join("");
+    renderFacts();
+    $("btn-w-next").textContent = isA ? "Préparer le code pour l’autre partie" : "Renvoyer ma réponse";
+  }
+  function renderFacts() {
+    var p = me(), c = st.role === "A" ? "#1B2A4A" : "#B9924C";
+    $("w-facts").innerHTML = p.faits.map(function (f) { return '<li style="--c:' + c + '"><span class="t">' + esc(f.t) + '</span><button data-del="' + f.id + '">Retirer</button></li>'; }).join("") || '<li style="--c:#ccc"><span class="t muted">Aucun fait pour l’instant.</span></li>';
+  }
+  $("w-facts").addEventListener("click", function (e) { var b = e.target.closest("[data-del]"); if (!b) return; var p = me(); p.faits = p.faits.filter(function (f) { return f.id !== b.getAttribute("data-del"); }); save(); renderFacts(); });
+  $("in-fact").addEventListener("input", function () { var j = find(JUDGE, this.value), h = $("fact-hint"); h.hidden = !j.length; if (j.length) h.textContent = "« " + j.slice(0, 3).join(" », « ") + " » : l’autre risque de rejeter le fait à cause du mot. Décrivez seulement ce qui s’est passé."; });
+  $("btn-addfact").onclick = function () { var t = $("in-fact").value.trim(); if (!t) { $("in-fact").focus(); return; } var p = me(); if (p.faits.length >= 15) { toast("Quinze faits au plus : gardez l’essentiel."); return; } p.faits.push({ id: uid(st.role.toLowerCase()), t: t }); $("in-fact").value = ""; $("fact-hint").hidden = true; save(); renderFacts(); };
+  $("w-needs").addEventListener("click", function (e) { var b = e.target.closest(".chip"); if (!b) return; var p = me(), n = b.getAttribute("data-n"), i = p.besoins.indexOf(n); if (i >= 0) p.besoins.splice(i, 1); else p.besoins.push(n); save(); b.setAttribute("aria-pressed", String(i < 0)); });
+  [["in-objet", function (v) { st.d.objet = v; }], ["in-me", function (v) { st.d.A.nom = v; }], ["in-other", function (v) { st.d.otherName = v; }], ["in-meB", function (v) { st.d.B.nom = v; }], ["in-souhait", function (v) { me().souhait = v; }], ["in-prop", function (v) { me().prop = v; }], ["in-needx", function (v) { me().besoinx = v; }]]
+    .forEach(function (x) { $(x[0]).addEventListener("input", function () { x[1](this.value); save(); }); });
+  $("btn-w-back").onclick = function () { if (st.role === "B") { renderPos(); show("pos"); } else { initIntro(); show("intro"); } };
+  $("btn-w-next").onclick = function () {
+    var p = me();
+    if (!p.faits.length && st.role === "A") { toast("Ajoutez au moins un fait."); return; }
+    if (st.role === "A") { if (!st.d.A.nom) { toast("Indiquez votre nom."); $("in-me").focus(); return; } st.d.stage = 1; st.lastCode = encode(st.d); }
+    else { if (!st.d.B.nom) { toast("Indiquez votre nom."); $("in-meB").focus(); return; } st.d.stage = 2; st.lastCode = encode(st.d); }
+    save(); renderShare(); show("share");
+  };
+
+  /* ---------- Positionnement ---------- */
+  function renderPos() {
+    var d = st.d, isB = st.role === "B";
+    var facts = isB ? d.A.faits : d.B.faits, pos = isB ? d.posB : d.posA, author = isB ? nameA() : nameB();
+    $("p-who").className = "who " + (isB ? "cB" : "cA"); $("p-who").textContent = isB ? "Tour 2 · Vous répondez" : "Tour 3 · Vous croisez";
+    $("t-pos").textContent = "Les faits selon " + author;
+    $("p-intro").textContent = (isB ? author + " vous propose ce constat" + (d.objet ? " sur « " + d.objet + " »" : "") + ". " : author + " s’est positionné sur vos faits et a ajouté les siens. ") + "Pour chacun, dites si vous êtes d’accord. Si ce n’est qu’en partie, précisez ce qui diffère : c’est là que se trouve la discussion.";
+    $("p-list").innerHTML = facts.map(function (f, i) { var p = pos[f.id] || {}; return '<div class="pos" data-id="' + esc(f.id) + '"><p class="ft"><b>' + (i + 1) + "</b>" + esc(f.t) + '</p><div class="seg">' + ST.map(function (s) { return '<button data-s="' + s[0] + '" aria-pressed="' + (p.s === s[0]) + '">' + s[1] + "</button>"; }).join("") + "</div>" + (p.s === "part" || p.s === "non" || p.s === "nsp" ? '<textarea data-c placeholder="' + (p.s === "nsp" ? "Facultatif : pourquoi ne le savez-vous pas ?" : "Votre version de ce point, factuellement") + '">' + esc(p.c || "") + "</textarea>" : "") + "</div>"; }).join("") || '<p class="muted">Aucun fait à positionner.</p>';
+    var o = $("p-other");
+    if (!isB) { o.hidden = false; var pb = d.posB; var nOk = d.A.faits.filter(function (f) { return (pb[f.id] || {}).s === "ok"; }).length; o.innerHTML = '<p style="margin:0;font-size:15px"><strong>' + esc(nameB()) + "</strong> est d’accord avec " + nOk + " de vos " + d.A.faits.length + " faits. Vous verrez le détail dans la croisée.</p>"; }
+    else o.hidden = true;
+    $("btn-p-next").textContent = isB ? "Continuer : mes propres faits" : "Terminer la croisée";
+  }
+  $("p-list").addEventListener("click", function (e) {
+    var b = e.target.closest(".seg button"); if (!b) return;
+    var id = b.closest(".pos").getAttribute("data-id"), pos = st.role === "B" ? st.d.posB : st.d.posA, cur = pos[id] || {};
+    pos[id] = { s: cur.s === b.getAttribute("data-s") ? "" : b.getAttribute("data-s"), c: cur.c || "" };
+    if (!pos[id].s) delete pos[id];
+    save(); var y = window.scrollY; renderPos(); window.scrollTo(0, y);
+  });
+  $("p-list").addEventListener("input", function (e) { if (!e.target.hasAttribute("data-c")) return; var id = e.target.closest(".pos").getAttribute("data-id"), pos = st.role === "B" ? st.d.posB : st.d.posA; if (pos[id]) { pos[id].c = e.target.value; save(); } });
+  $("btn-p-back").onclick = function () { initIntro(); show("intro"); };
+  $("btn-p-next").onclick = function () {
+    var d = st.d, facts = st.role === "B" ? d.A.faits : d.B.faits, pos = st.role === "B" ? d.posB : d.posA;
+    var missing = facts.filter(function (f) { return !pos[f.id]; }).length;
+    if (missing) { toast(missing + " fait" + (missing > 1 ? "s" : "") + " sans réponse : choisissez « Je ne sais pas » si besoin."); return; }
+    if (st.role === "B") { if (!d.B.nom && d.otherName) d.B.nom = d.otherName; save(); renderWrite(); show("write"); }
+    else { d.stage = 3; st.lastCode = encode(d); save(); renderSyn(); show("syn"); }
+  };
+
+  /* ---------- Partage ---------- */
+  function renderShare() {
+    var d = st.d, to = st.role === "A" ? (d.otherName || "l’autre partie") : nameA();
+    var notes = { 1: "<strong>Tour 1 terminé.</strong> Envoyez ce code à " + esc(to) + ". Il l’ouvrira dans La Croisée, se positionnera sur vos faits et vous renverra un nouveau code.", 2: "<strong>Tour 2 terminé.</strong> Renvoyez ce code à " + esc(to) + ". Il se positionnera sur vos faits, et la croisée sera complète.", 3: "<strong>La croisée est complète.</strong> Envoyez ce code final à " + esc(st.role === "A" ? nameB() : nameA()) + " pour qu’il voie la même carte que vous." };
+    $("sh-note").innerHTML = "<p>" + notes[d.stage] + "</p>";
+    $("sh-intro").textContent = "Copiez le code ci-dessous et envoyez-le par courriel ou par messagerie, ou téléchargez le fichier et joignez-le.";
+    $("out-code").value = st.lastCode || encode(d);
+    $("btn-sh-syn").hidden = d.stage !== 3;
+    $("sh-next").hidden = d.stage === 3;
+    $("sh-next-t").textContent = "Quand " + to + " vous aura renvoyé son code, ouvrez-le ici.";
+  }
+  $("btn-copy").onclick = function () { var t = $("out-code").value; if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(function () { toast("Code copié."); }, function () { $("out-code").select(); toast("Sélectionnez et copiez le code."); }); else { $("out-code").select(); toast("Sélectionnez et copiez le code."); } };
+  $("btn-dl").onclick = function () { try { var blob = new Blob([$("out-code").value], { type: "text/plain" }), a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "croisee-tour-" + st.d.stage + ".txt"; document.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500); } catch (e) { toast("Téléchargement impossible sur cet appareil."); } };
+  $("btn-mail").onclick = function () {
+    var d = st.d, body = "Bonjour,\n\nJe vous propose de faire le point ensemble avec La Croisée, l’outil de constat amiable de Révéla.\n\nOuvrez la page de La Croisée, choisissez « J’ai reçu un code », puis collez le code ci-dessous :\n\n" + $("out-code").value + "\n\nMerci.";
+    if (body.length > 1800) body = "Bonjour,\n\nJe vous propose de faire le point ensemble avec La Croisée, l’outil de constat amiable de Révéla. Je vous joins le fichier du constat : ouvrez La Croisée, choisissez « J’ai reçu un code », puis « Ouvrir un fichier ».\n\nMerci.";
+    location.href = "mailto:?subject=" + encodeURIComponent("Notre constat" + (d.objet ? " : " + d.objet : "")) + "&body=" + encodeURIComponent(body);
+  };
+  $("btn-sh-open").onclick = function () { $("in-code").value = ""; show("open"); };
+  $("btn-sh-syn").onclick = function () { renderSyn(); show("syn"); };
+  $("btn-syn-share").onclick = function () { st.lastCode = encode(st.d); renderShare(); show("share"); };
+
+  /* ---------- Synthèse ---------- */
+  function lines(t) { return String(t || "").split("\n").map(function (x) { return x.trim(); }).filter(Boolean); }
+  function analyse(d) {
+    var all = [];
+    d.A.faits.forEach(function (f) { all.push({ t: f.t, by: "A", p: d.posB[f.id] || { s: "nsp" } }); });
+    d.B.faits.forEach(function (f) { all.push({ t: f.t, by: "B", p: d.posA[f.id] || { s: "nsp" } }); });
+    var ok = all.filter(function (x) { return x.p.s === "ok"; }), part = all.filter(function (x) { return x.p.s === "part"; }), non = all.filter(function (x) { return x.p.s === "non"; }), nsp = all.filter(function (x) { return x.p.s === "nsp"; });
+    var nA = d.A.besoins.concat(d.A.besoinx ? [d.A.besoinx] : []), nB = d.B.besoins.concat(d.B.besoinx ? [d.B.besoinx] : []);
+    var common = d.A.besoins.filter(function (n) { return d.B.besoins.indexOf(n) >= 0; });
+    var pct = all.length ? Math.round((ok.length + part.length * 0.5) / all.length * 100) : 0;
+    return { all: all, ok: ok, part: part, non: non, nsp: nsp, nA: nA, nB: nB, common: common, pct: pct };
+  }
+  function ring(pct) { var r = 30, c = 2 * Math.PI * r, off = c * (1 - pct / 100); return '<svg width="80" height="80" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="' + r + '" fill="none" stroke="rgba(255,255,255,.15)" stroke-width="9"/><circle cx="40" cy="40" r="' + r + '" fill="none" stroke="#B9924C" stroke-width="9" stroke-linecap="round" stroke-dasharray="' + c.toFixed(1) + '" stroke-dashoffset="' + off.toFixed(1) + '" transform="rotate(-90 40 40)"/><text x="40" y="46" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="20" font-weight="600" fill="#F7F3EA">' + pct + "%</text></svg>"; }
+  function renderSyn() {
+    var d = st.d, a = analyse(d), A = nameA(), B = nameB();
+    $("t-syn").textContent = "La croisée" + (d.objet ? " · " + d.objet : "");
+    $("syn-date").textContent = A + " et " + B + (d.demo ? " · exemple fictif" : " · établie le " + new Date().toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" }));
+    var verdict = a.pct >= 60 ? "Vous êtes d’accord sur l’essentiel des faits." : a.pct >= 35 ? "Une base commune existe, et des écarts à éclaircir." : "Vos versions divergent encore beaucoup.";
+    $("meter").innerHTML = ring(a.pct) + "<div><strong>" + verdict + "</strong><p>" + a.ok.length + " fait" + (a.ok.length > 1 ? "s" : "") + " partagé" + (a.ok.length > 1 ? "s" : "") + ", " + a.part.length + " en partie, " + a.non.length + " contesté" + (a.non.length > 1 ? "s" : "") + ", " + a.nsp.length + " ignoré" + (a.nsp.length > 1 ? "s" : "") + " par l’un de vous" + (a.common.length ? ". Et " + a.common.length + " besoin" + (a.common.length > 1 ? "s" : "") + " en commun." : ".") + "</p></div>";
+    function who(x) { return x.by === "A" ? A : B; } function other(x) { return x.by === "A" ? B : A; }
+    $("syn-ok").innerHTML = '<h3><i style="--c:#7FA36C"></i>Ce sur quoi nous sommes d’accord</h3>' + (a.ok.length ? "<ul>" + a.ok.map(function (x) { return "<li><strong>" + esc(who(x)) + " :</strong> " + esc(x.t) + "</li>"; }).join("") + "</ul>" : '<p class="muted small" style="margin:0">Aucun fait partagé pour l’instant.</p>');
+    var diff = a.part.concat(a.non);
+    $("syn-diff").innerHTML = '<h3><i style="--c:#C2584C"></i>Ce que nous voyons différemment</h3>' + (diff.length ? "<ul>" + diff.map(function (x) { return "<li><strong>" + esc(who(x)) + " :</strong> " + esc(x.t) + "<small><strong>" + esc(other(x)) + (x.p.s === "non" ? " conteste" : " nuance") + " :</strong> " + (x.p.c ? esc(x.p.c) : "sans précision") + "</small></li>"; }).join("") + "</ul>" : '<p class="muted small" style="margin:0">Aucun écart déclaré.</p>');
+    $("syn-nsp").innerHTML = '<h3><i style="--c:#6E6A5E"></i>Ce que l’un de nous ignorait</h3>' + (a.nsp.length ? "<ul>" + a.nsp.map(function (x) { return "<li>" + esc(x.t) + "<small>Ignoré par " + esc(other(x)) + (x.p.c ? " : " + esc(x.p.c) : "") + "</small></li>"; }).join("") + "</ul>" : '<p class="muted small" style="margin:0">Rien de tel.</p>');
+    $("syn-nsp").hidden = !a.nsp.length;
+    function needs(list, name, c) { return '<h3><i style="--c:' + c + '"></i>Les besoins de ' + esc(name) + "</h3>" + (list.length ? "<p style=\"margin:0\">" + list.map(function (n) { return '<span class="tagc"' + (a.common.indexOf(n) >= 0 ? "" : ' style="background:#EFE8DA;color:#1B2A4A"') + ">" + esc(n) + "</span>"; }).join("") + "</p>" : '<p class="muted small" style="margin:0">Non précisés.</p>'); }
+    $("syn-needA").innerHTML = needs(a.nA, A, "#1B2A4A"); $("syn-needB").innerHTML = needs(a.nB, B, "#B9924C");
+    $("syn-common").innerHTML = '<h3><i style="--c:#7FA36C"></i>Ce qui nous rapproche</h3>' + (a.common.length ? "<p style=\"margin:0 0 6px\">Vous partagez " + (a.common.length > 1 ? "ces besoins" : "ce besoin") + " : <strong>" + a.common.map(esc).join(", ") + "</strong>.</p><p class=\"small muted\" style=\"margin:0\">Un besoin commun est un point de départ : toute solution qui le respecte a plus de chances d’être acceptée par les deux.</p>" : "<p style=\"margin:0\">Aucun besoin commun déclaré. Cherchez-en un ensemble : c’est souvent le premier pas.</p>");
+    function props(p, name, c) { var l = lines(p.prop); return '<h3><i style="--c:' + c + '"></i>Ce que propose ' + esc(name) + "</h3>" + (p.souhait ? '<p class="small muted" style="margin:0 0 6px">Souhait : ' + esc(p.souhait) + "</p>" : "") + (l.length ? "<ul>" + l.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>" : '<p class="muted small" style="margin:0">Pas de proposition.</p>'); }
+    $("syn-propA").innerHTML = props(d.A, A, "#1B2A4A"); $("syn-propB").innerHTML = props(d.B, B, "#B9924C");
+    var next = a.pct >= 60 && diff.length <= 3
+      ? ["Rencontrez-vous pour traiter les écarts restants, un par un, en partant de ce qui vous rapproche.", "Si vous trouvez un accord, mettez-le par écrit. Issu d’une conciliation, d’une médiation ou d’une procédure participative, il peut être homologué par le juge pour devenir exécutoire."]
+      : ["Les écarts sont trop nombreux pour être réglés seul à seul : proposez une rencontre avec un conciliateur de justice, gratuit, ou un médiateur.", "Apportez cette croisée : elle fait gagner une séance entière, puisque le terrain commun est déjà identifié."];
+    next.push("Avec vos avocats, une convention de procédure participative permet de poursuivre la recherche d’un accord dans un cadre écrit, pour une durée déterminée. Si un juge est déjà saisi, l’instruction conventionnelle permet encore d’organiser ensemble la suite du dossier.");
+    $("syn-next").innerHTML = '<h3><i style="--c:#B9924C"></i>Par où commencer</h3><ol style="margin:0;padding-left:20px;font-size:15px">' + next.map(function (x) { return '<li style="margin-bottom:8px">' + esc(x) + "</li>"; }).join("") + "</ol>";
+    $("syn-law").innerHTML = LAW.map(function (l) { return '<div class="law"><p>' + esc(l[2]) + '</p><a href="' + l[1] + '" target="_blank" rel="noopener">' + esc(l[0]) + ", sur Légifrance</a></div>"; }).join("") + '<p class="small muted" style="margin:10px 0 0">Références vérifiées sur Légifrance le 9 octobre 2026.</p>';
+    $("sigA").textContent = "Lu par " + A + ", le"; $("sigB").textContent = "Lu par " + B + ", le";
+  }
+  $("btn-print").onclick = function () { window.print(); };
+  $("btn-erase").onclick = function () { if (!this.dataset.armed) { var self = this; self.dataset.armed = "1"; self.dataset.label = self.textContent; self.textContent = "Cliquez à nouveau pour tout effacer"; setTimeout(function () { if (self.dataset.armed) { delete self.dataset.armed; self.textContent = self.dataset.label; } }, 5000); return; } delete this.dataset.armed; setTimeout(function () { try { localStorage.removeItem(KEY); } catch (e) {} }, 0);
+     try { localStorage.removeItem(KEY); } catch (e) {} st = { d: null, role: "", screen: "intro", lastCode: "" }; initIntro(); show("intro"); this.textContent = "Données effacées"; };
+  function openMentions() { if (location.hash === "#mentions-legales") $("mentions-legales").open = true; }
+  window.addEventListener("hashchange", openMentions);
+  window.__croisee = { encode: encode, decode: decode, demo: demo, analyse: analyse };
+
+  load(); initIntro(); openMentions();
+  if (st.d && st.screen !== "intro" && st.screen !== "open") route(); else show("intro", true);
+})();
+</script>
+</body>
+</html>
